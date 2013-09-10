@@ -2,7 +2,7 @@
 # Largest prime factor
 #
 
-from math import *
+from math import sqrt
 
 def is_prime(n):
     if n == 1:

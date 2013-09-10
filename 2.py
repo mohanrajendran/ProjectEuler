@@ -3,10 +3,9 @@
 #
 
 sum = 0
-a = 1
-b = 1
+a = 2
+b = 8
 while a < 4000000:
-    a,b = b, a+b
-    if a % 2 == 0:
-        sum = sum + a
+    sum = sum + a
+    a,b = b, a+4*b
 print sum
