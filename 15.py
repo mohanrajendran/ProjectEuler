@@ -2,13 +2,10 @@
 # Lattice paths
 #
 
-def combination(n,k):
-    return fact(n) / (fact(k) * fact(n-k))
+import math
 
-def fact(n):
-    if n == 0:
-        return 1
-    else:
-        return n*fact(n-1)
+def combination(n,k):
+    f = math.factorial
+    return f(n) / (f(k) * f(n-k))
 
 print combination(40,20)
